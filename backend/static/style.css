@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 50%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Chat Title */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Chat Box */
+#chat-box {
+    width: 100%;
+    height: 350px;
+    overflow-y: auto;
+    background: #eef2f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Message Styling */
+.message {
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 85%;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+/* User Message */
+.user {
+    align-self: flex-end;
+    background: #007bff;
+    color: white;
+    border-radius: 12px 12px 0 12px;
+    text-align: right;
+    padding: 12px;
+}
+
+/* Bot Message */
+.bot {
+    align-self: flex-start;
+    background: #e0e0e0;
+    color: #333;
+    border-radius: 12px 12px 12px 0;
+    padding: 12px;
+}
+
+/* Table Formatting for Bot Responses */
+.bot table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+.bot table, 
+.bot th, 
+.bot td {
+    border: 1px solid #ccc;
+}
+
+.bot th, 
+.bot td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Input Field */
+#query-input {
+    width: 85%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    padding: 12px 18px;
+    margin-top: 10px;
+    border: none;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .chat-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    #query-input {
+        width: 75%;
+    }
+}
+
+@media (max-width: 450px) {
+    .chat-container {
+        width: 95%;
+    }
+
+    #query-input {
+        width: 70%;
+    }
+}
