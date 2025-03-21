@@ -2,7 +2,7 @@ import requests
 import json
 
 # Set your Groq API key
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "api"
 GROQ_API_URL = "https://api.groq.com/v1/chat/completions"
 
 def generate_mongo_query(natural_language_query):
